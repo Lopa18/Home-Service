@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/hamburgerCustomerPage.css">
+
+    <title>Customer Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+
+
+<body>
+<div class="navbar">
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-text">
+        <p>HomeServeO</p>
+    </div>
+    <div class="logo">
+        <img src="./image/Cropped_Image (1).png" alt="">
+        <!-- <h1>HomeServeO</h1> -->
+    </div>
+    <div class="upload-button"  >
+      <a href="./UploadWork.html"> <button id="upload-work">Upload Work</button></a> 
+    </div>
+</div>
+
+
+
+<div class="side-bar">
+    <header>
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <img src="./image/avatar.jpeg" alt="">
+        <h1>HomeServeO</h1>
+    </header>
+    <div class="menu">
+        <div class="item"><a href="#" ><i class="fas fa-desktop"></i>Ongoing Works</a></div>
+        <div class="item"><a href="#"><i class="fas fa-th"></i>Completed Works</a></div>
+        <div class="item">
+            <a class="sub-btn"><i class="fas fa-cogs"></i>Settings<i class="fas fa-angle-right dropdown"></i></a>
+            <div class="sub-menu">
+                <a href="./fcustomerdetails.html" class="sub-item" id="fetch">View Profile</a>
+                <a href="./updateCustomer.html" class="sub-item" id="update" onclick="openpopup()">Update Profile</a>
+                <a href="#" class="sub-item" id="delete-account">Delete Account</a>
+				
+            </div>
+        </div>
+        <div class="item" id="logout"><a href="#"><i class="fas fa-info-circle"></i>Log out</a></div>
+    </div>
+</div>
+
+
+<!-- <section class="main">
+    <h1>Sidebar Menu With<br>Sub-Menus</h1>
+</section> -->
+
+<!-- start of details of the customer-->
+<div class="vendor-container" id="vendor-list">
+    <!-- Vendor 1 -->
+    <div class="vendor-item">
+        <h2 class="vendor-name">Vendor Name 1</h2>
+        <p class="vendor-work">Work: Plumbing</p>
+        <p class="vendor-location">Location: City 1</p>
+        <button class="hire-button" onclick="hireVendor(1)">Hire</button>
+    </div>
+
+    <!-- Vendor 2 -->
+    <div class="vendor-item">
+        <h2 class="vendor-name">Vendor Name 2</h2>
+        <p class="vendor-work">Work: Electrical</p>
+        <p class="vendor-location">Location: City 2</p>
+        <button class="hire-button" onclick="hireVendor(2)">Hire</button>
+    </div>
+     <!-- Vendor 3 -->
+     <div class="vendor-item">
+        <h2 class="vendor-name">Vendor Name 3</h2>
+        <p class="vendor-work">Work: Carpentry</p>
+        <p class="vendor-location">Location: City 3</p>
+        <button class="hire-button" onclick="hireVendor(3)">Hire</button>
+    </div>
+
+    <!-- Vendor 4 -->
+    <div class="vendor-item">
+        <h2 class="vendor-name">Vendor Name 4</h2>
+        <p class="vendor-work">Work: Painting</p>
+        <p class="vendor-location">Location: City 4</p>
+        <button class="hire-button" onclick="hireVendor(4)">Hire</button>
+    </div>
+
+    <!-- Vendor 5 -->
+    <div class="vendor-item">
+        <h2 class="vendor-name">Vendor Name 5</h2>
+        <p class="vendor-work">Work: Gardening</p>
+        <p class="vendor-location">Location: City 5</p>
+        <button class="hire-button" onclick="hireVendor(5)">Hire</button>
+    </div>
+
+    <!-- Vendor 6 -->
+    <div class="vendor-item">
+        <h2 class="vendor-name">Vendor Name 6</h2>
+        <p class="vendor-work">Work: HVAC</p>
+        <p class="vendor-location">Location: City 6</p>
+        <button class="hire-button" onclick="hireVendor(6)">Hire</button>
+    </div>
+
+    <!-- Vendor 7 -->
+    <div class="vendor-item">
+        <h2 class="vendor-name">Vendor Name 7</h2>
+        <p class="vendor-work">Work: Roofing</p>
+        <p class="vendor-location">Location: City 7</p>
+        <button class="hire-button" onclick="hireVendor(7)">Hire</button>
+    </div>
+    <!-- Add more vendor items as needed -->
+</div>
+
+
+
+
+
+<!-- -------------------------------------------- -->
+
+<script src="./js/hamburgerCustomerPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/hamburgerCustomerPage.css">
+
+    <title>Customer Ongoing Works</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/fcustomercompletedwork.css">
+
+
+</head>
+
+
+
+<body>
+<div class="navbar">
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="navbar-text">
+        <p>HomeServeO</p>
+    </div>
+    <div class="logo">
+        <img src="./image/Cropped_Image (1).png" alt="">
+        <!-- <h1>HomeServeO</h1> -->
+    </div>
+    <div class="upload-button">
+        <button id="upload-work">Upload Work</button>
+    </div>
+</div>
+<!-- ------------------------------Side bar Code------------- -->
+<div class="side-bar">
+    <header>
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <img src="./image/avatar.jpeg" alt="">
+        <h1>HomeServeO</h1>
+    </header>
+    <div class="menu">
+        <div class="item"><a href="#" ><i class="fas fa-desktop"></i>Ongoing Works</a></div>
+        <div class="item"><a href="hhttp://127.0.0.1:5501/CompletedWorksForCustomer.html"><i class="fas fa-th"></i>Completed Works</a></div>
+        <div class="item">
+            <a class="sub-btn"><i class="fas fa-cogs"></i>Settings<i class="fas fa-angle-right dropdown"></i></a>
+            <div class="sub-menu">
+                <a href="./fcustomerdetails.html" class="sub-item" id="fetch">View Profile</a>
+                <a href="./CustomerSignup.html" class="sub-item" id="update" onclick="openpopup()">Update Profile</a>
+                <a href="#" class="sub-item" id="delete-account">Delete Account</a>
+            </div>
+        </div>
+        <div class="item" id="logout"><a href="#"><i class="fas fa-info-circle"></i>Log out</a></div>
+    </div>
+</div>
+
+<!-- ------------------------------ end of side bar and nav bar------------------------------------------------------------------- -->
+
+<section>
+
+
+
+
+
+</section>
+
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Type of Work</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Work Address</th>
+                <th>Customer Name</th>
+                <th>Customer Phone</th>
+                <th>Customer Email</th>
+                <th>Total Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Add your table data here -->
+            <tr>
+                <td>Web Design</td>
+                <td>2023-01-15</td>
+                <td>2023-02-28</td>
+                <td>123 Main St, City</td>
+                <td>John Doe</td>
+                <td>(123) 456-7890</td>
+                <td>john@example.com</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>Web Design</td>
+                <td>2023-01-15</td>
+                <td>2023-02-28</td>
+                <td>123 Main St, City</td>
+                <td>John Doe</td>
+                <td>(123) 456-7890</td>
+                <td>john@example.com</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td>Graphic Design</td>
+                <td>2023-03-10</td>
+                <td>2023-04-25</td>
+                <td>456 Elm St, Town</td>
+                <td>Jane Smith</td>
+                <td>(555) 123-4567</td>
+                <td>jane@example.com</td>
+                <td>$3,500</td>
+            </tr>
+            <!-- Add more rows for your completed works -->
+        </tbody>
+    </table>
+
+
+<!-- -------------------------------------------- -->
+<script src="./js/hamburgerCustomerPage.js"></script>
+</body>
+</html>
